@@ -1,0 +1,110 @@
+/*variables*/
+/*base*/
+body {
+  background: url("../images/bg.jpg") no-repeat #182d40;
+  background-size: 100% auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.img {
+  background: url("../images/img-logo.png") no-repeat;
+  text-indent: -9999px;
+}
+
+.font {
+  font-family: "Just Another Hand";
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+/*header*/
+header {
+  position: fixed;
+  width: 100%;
+  height: 130px;
+  background: #fff;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 -1px rgba(0, 0, 0, 0.1);
+}
+header .title {
+  position: absolute;
+  top: 35px;
+  left: 204px;
+  width: 173px;
+  height: 60px;
+  background-position: 0 -453px;
+}
+header .emblem {
+  position: absolute;
+  top: -70px;
+  left: 15px;
+  width: 176px;
+  height: 196px;
+}
+
+/*#gnb*/
+#gnb {
+  float: right;
+  font-size: 22px;
+  line-height: 40px;
+}
+#gnb li {
+  float: left;
+  padding: 22px 11px 0;
+  border-left: 1px solid #ddd;
+}
+#gnb a {
+  color: #5e5e5e;
+  transition: all 0.2s ease-in-out;
+  border-bottom: 2px solid #fff;
+}
+#gnb a:hover {
+  color: #e26d5d;
+  border-color: #e26d5d;
+}
+#gnb a::before {
+  color: #e26d5d;
+}
+#gnb .sub {
+  position: absolute;
+  bottom: 110px;
+  margin-left: -11px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s;
+}
+#gnb .sub li {
+  float: none;
+  border: 0;
+  background: #fff;
+  margin-bottom: 1px;
+  padding: 7px 14px 3px;
+}
+#gnb .sub li:first-child {
+  border-radius: 3px 3px 0 0;
+}
+#gnb .sub a {
+  border: 0;
+}
+#gnb li:hover .sub {
+  opacity: 1;
+  visibility: visible;
+  bottom: 130px;
+}
+
+/*.counter*/
+.counter ul {
+  counter-reset: menu;
+}
+.counter li {
+  counter-increment: menu;
+}
+.counter li a::before {
+  content: "0" counter(menu) " ";
+}/*# sourceMappingURL=style.css.map */
